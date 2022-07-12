@@ -1,0 +1,29 @@
+/* adesão de fonte externa*/
+@font-face {
+    font-family: 'secondChance';
+    src: url('KGSecondChancesSketch.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* configuraçoes de background*/
+body{   background-image:url(imagemfundo.jpg);
+        background-repeat: repeat-y;
+        background-size: contain;
+    }
+/*propriedades da classe topo */
+.topo{
+    background-color: aquamarine;
+    font-family: 'secondChance';
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    
+}
+/*propriedades da classe que configura as fontes dos paragrafos e textos menores*/
+.fontf{
+    font-family: 'secondChance';
+    font-size: 15px;
+    color:#072f52;
+    text-align: center;
+    line-height: 30%;
+}

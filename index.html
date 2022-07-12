@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Comando CSS para background com repetição e contain para utilizar a imagem o mais proximo do tamnaho original-->
-    <style>
-        body{background-image:url(imagemfundo.jpg);
-            background-repeat: repeat-y;
-            background-size: contain;
-            }
-    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,18 +8,20 @@
     <meta name="keywords" content="Curriculum, Portifólio, Apresentação Pessoal">
     <meta name=" author" content="Josiel Soares">
     <title>Document Curriculum Vitae</title>
+    <!-- Comando CSS para chamar as propriedades do CSS Externo-->
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <!-- Este é o titulo Principal-->
-    <div>
-    <h1><i>Curriculum Vitae</i></h1>
-        <p>Realizando apenas um teste e criação de Curriculum pessoal personalizado, utilizando <abbr title="Linguagem de Marcação de HiperTexto">HTML</abbr>, CSS, etc.</p>
-        <p><cite>"O que não provoca minha morte faz com que eu fique mais forte." - Friedrich Nietzsche</cite></p>
+    <div class="topo">
+    <h1>Josiel Soares</h1>
+        <p class="fontf">Realizando um teste e criação de Curriculum pessoal personalizado, utilizando <abbr title="Linguagem de Marcação de HiperTexto">HTML</abbr>, CSS, etc.</p>
+        <p class="fontf">"O que não provoca minha morte faz com que eu fique mais forte." - Friedrich Nietzsche</p>
     <hr>
     </div>
     <!-- Segundo Bloco com informações Pessoais-->
-    <div>
-    <h2><i>Quem Sou</i></h2> 
+    <div class="quemSou">
+    <h2 class=><i>Quem Sou</i></h2> 
         <img src="img/Rei Shiquita em HomeOffice.png" width="200" style="position:relative;">
         </marquee>
         <p>Nome: Josiel Soares</p>
@@ -38,7 +33,7 @@
         <p>Telefone: (67) 0000-0000</p>
         
     <hr>
-    </div>
+    </div class=" objPro">
     <!-- Terceiro Bloco - Realizado o comando abbr titile para descrever as siglas quando o mouse está em cima da palava-->
     <div>
     <h3><i>Objetvo Profissional</i></h3>
@@ -46,14 +41,14 @@
     <hr>
     </div>
     <!-- Quarto Blobo Sobre formação em estudos com certificados-->
-    <div>
+    <div class="formacao">
     <h4><i>Formação Acadêmica</i></h4>
         <p>Ensino Médio Completo – Maria Rita de Cássia Pontes Teixeira – Concluido em 2011.</p>
         <p>Graduado Bachael em Ciência da Computação – Anhaguera Uniderp – Concluído em 2020.</p>
     <hr>
     </div>
     <!-- Quinto Bloco-->
-    <div>
+    <div class="resumoPro">
     <h4><i>Resumo Profissional</i></h4>
         <p>Experiência de 2 anos e 8 meses como auxiliar de cliente, caixa, e fiscal de mercadoria em loja de varejo do ramo de vestimentas.</p>
 
@@ -64,9 +59,9 @@
     <hr>
     </div>
      <!-- Sexto Bloco - Realizado a utilização de tabelas e comando css para centralizar o texto com colunas e linhas-->
-     <div>
+     <div class=" idiomas">
      <h5><i>Idiomas</i></h5>
-        <Table width="20%" border="2" style="text-align: center;">
+        <table width="20%" border="2" style="text-align: center;">
             <tr>
                 <th>Idioma</th>
                 <th>Ler</th>
@@ -82,7 +77,7 @@
         </Table>
      </div>
     <!-- Link URL Relativo-->
-    <div>
+    <div class="nextPage">
     <p><a href="pagina2.html">Ir para Segunda Página</a></p>
     </div>
 </body>
