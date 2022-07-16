@@ -1,29 +1,53 @@
-/* adesão de fonte externa*/
-@font-face {
-    font-family: 'secondChance';
-    src: url('KGSecondChancesSketch.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+/* Importação de fonte externa do Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400&family=Edu+TAS+Beginner&display=swap');
 /* configuraçoes de background*/
 body{   background-image:url(imagemfundo.jpg);
         background-repeat: repeat-y;
         background-size: contain;
     }
-/*propriedades da classe topo */
+/*Propriedades da classe topo */
 .topo{
+    font-family: 'Cormorant SC', serif;
     background-color: aquamarine;
-    font-family: 'secondChance';
+    border: 5px solid black;
     text-align: center;
     font-size: 35px;
+    padding: 20px;
     color: black;
     
 }
-/*propriedades da classe que configura as fontes dos paragrafos e textos menores*/
-.fontf{
-    font-family: 'secondChance';
-    font-size: 15px;
+/*Propriedades da classe que configura as fontes dos paragrafos e textos menores*/
+.subtituloTopo{
+    font-family: 'Cormorant SC', serif;
+    font-family: 'Edu TAS Beginner';
+    font-size: 20px;
     color:#072f52;
     text-align: center;
-    line-height: 30%;
+    line-height: 35%;
+}
+/*Classe para propriedades do titulos do site */
+.fontSub{
+    font-family: 'Cormorant SC', serif;
+    text-align: center;
+    font-size: 35px;
+    width:100%;
+    color: black;
+}
+/*Tags para os textos dentro dos títulos */
+p{
+    font-family: 'Cormorant SC', serif;
+    font-family: 'Edu TAS Beginner';
+    font-size: 20px;
+    color:#072f52;
+    text-align: center;
+    line-height: auto;
+}
+/*Classe com as propriedades do botão trocar de página*/
+.botao{
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
 }
