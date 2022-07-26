@@ -1,30 +1,42 @@
 /* Importação de fonte externa do Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400&family=Edu+TAS+Beginner&display=swap');
+@keyframes degrade-animado{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-y: 100%;
+    }
+}
 /* configuraçoes de background*/
-body{   background-image:url(imagemfundo.jpg);
-        background-repeat: repeat-y;
-        background-size: contain;
+body{   background-image:linear-gradient(to left, #5058E6, #3841E0, #3B43EB, #2B32AD, #353760);
+        animation-name: degrade-animado;
+        animation-duration: 5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        
     }
 /*Propriedades da classe topo */
 .topo{
     font-family: 'Cormorant SC', serif;
-    background-color: aquamarine;
-    border: 5px solid black;
-    text-align: center;
-    font-size: 35px;
-    padding: 20px;
+    border: 5px double black;
     color: black;
+    text-align: auto;
+    font-size: 35px;
+    padding: 1px 50px 10px 5px;
+    
     
 }
-/*Propriedades da classe que configura as fontes dos paragrafos e textos menores*/
+/*Propriedades da classe que configura a citação embaixo do titulo do site(classe topo) */
 .subtituloTopo{
     font-family: 'Cormorant SC', serif;
     font-family: 'Edu TAS Beginner';
-    font-size: 20px;
     color:#072f52;
-    text-align: center;
-    line-height: 35%;
+    text-align: left;
+    font-size: 20px;
+    line-height: 5%;
+    
 }
 /*Classe para propriedades do titulos do site */
 .fontSub{
@@ -34,13 +46,33 @@ body{   background-image:url(imagemfundo.jpg);
     width:100%;
     color: black;
 }
-/*Tags para os textos dentro dos títulos */
+/*Classe para criação de bordas dentro da DIV em que a imagem de perfil está alocada*/
+.ImagemQuemSou{
+    border-top: 5px double black;
+    border-left: 5px double black;
+    border-right: 5px double black;;
+    padding: 1px 50px 10px 5px;
+    text-align: left;
+    
+}
+/*Classe para criação de bordas em volta da imagem de perfil*/
+.figure{
+    border: 5px solid black;
+}
+/*Classe dos parametros da div das minhas informações*/
+.quemSou{
+    color: black;
+    border-left: 5px double black;
+    border-right: 5px double black;;
+    padding: 1px 50px 10px 5px;
+    text-align: left;
+}
+/*tag para paremetrização de todos os topicos do site que não foram parametrizados em classes. */
 p{
     font-family: 'Cormorant SC', serif;
     font-family: 'Edu TAS Beginner';
     font-size: 20px;
     color:#072f52;
-    text-align: center;
     line-height: auto;
 }
 /*Classe com as propriedades do botão trocar de página*/
@@ -50,4 +82,7 @@ p{
     padding: 15px;
     border-radius: 10px;
     text-decoration: none;
+}
+.botao:hover{
+    background:crimson;
 }
