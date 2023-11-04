@@ -6,14 +6,19 @@
 * {
     box-sizing: border-box;
     font-family: 'Cormorant SC', serif;
-}  
+} 
 
-/* configuraçoes de background com efeito degrade*/
-body{   background-image:linear-gradient(-145deg, #BFDEF2, #89BAD8, #5D86B4, #3D5D9A,#212C62);
-        animation-duration: 5s;
-        animation-direction: alternate;
-        animation-iteration-count: infinite;
-}
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  
+  body {
+    background: linear-gradient(-145deg, #BFDEF2, #89BAD8, #5D86B4, #3D5D9A, #212C62);
+    background-size: 200% 200%;
+    animation: backgroundAnimation 5s infinite alternate;
+  }
+  
 
 /*Propriedades da classe topo */
 .topo{
@@ -26,7 +31,36 @@ body{   background-image:linear-gradient(-145deg, #BFDEF2, #89BAD8, #5D86B4, #3D
     text-align: center;
     font-size: 25px;
 
+}/* Estilo da caixa de informações (inicialmente oculta) */
+.info-content {
+    display: none; /* Inicialmente oculta */
+    background: linear-gradient(-145deg, #BFDEF2, #89BAD8, #5D86B4, #3D5D9A, #212C62);
+    font-family: 'Cormorant SC', serif;
+    border: 1px solid #000; /* Borda da caixa */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    position: absolute; /* Posição absoluta para sobrepor outros elementos */
+    top: 50px; /* Distância do topo */
+    right: 250px; /* Alinhamento à direita */
+    width: 350px; /* Largura da caixa */
 }
+
+/* Estilo para o botão "+" dentro da caixa de informações */
+.plus-button {
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -20px; /* Para alinhar o botão no canto superior direito */
+}
+
+/* Estilo para os parágrafos dentro da caixa de informações */
+.info-content p {
+    margin: 10px 0; /* Espaçamento entre parágrafos */
+}
+
+/* Outros estilos de formatação, como cores, fontes, etc., podem ser personalizados conforme desejado. */
+
 
 /*Propriedades da classe que configura a citação embaixo do titulo do site(classe topo) */
 .subtituloTopo{
