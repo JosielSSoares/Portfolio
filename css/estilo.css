@@ -75,9 +75,13 @@
 
 /*Classe para propriedades do titulos do site */
 .fontSub{
-
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    margin: 10px;
+    color: black;
+    text-align: center;
     font-size: 25px;
-    width:100%;
 }
 
 /*Classe dos parametros da div das minhas informações*/
@@ -88,14 +92,6 @@
     padding: 1px 50px 10px 5px;
     margin-right: 75%;
     text-align: left;   
-}
-.objetivoPro{
-    border: 2px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-    border-radius: 10px;
-    margin: 10px;
-    text-align: center;
-    padding: 3px;
 }
 
 /*tag para paremetrização de todos os topicos do site que não foram parametrizados em classes. */
