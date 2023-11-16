@@ -74,7 +74,7 @@
 }
 
 /*Classe para propriedades do titulos do site */
-.fontSub{
+.formatacao{
     border: 2px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
     border-radius: 10px;
@@ -82,16 +82,6 @@
     color: black;
     text-align: center;
     font-size: 25px;
-}
-
-/*Classe dos parametros da div das minhas informações*/
-.quemSou{
-    color: black;
-    border-left: 5px double black;
-    border-right: 5px double black;;
-    padding: 1px 50px 10px 5px;
-    margin-right: 75%;
-    text-align: left;   
 }
 
 /*tag para paremetrização de todos os topicos do site que não foram parametrizados em classes. */
@@ -114,3 +104,19 @@ p{
 .botao:hover{
     background:#111248;
 }
+
+.arrow {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+}
+
+.collapsible {
+    cursor: pointer;
+    margin-bottom: 5px; /* Espaçamento abaixo de cada item */
+}
+
+.content {
+    display: none; /* Conteúdo inicialmente oculto */
+};
+
