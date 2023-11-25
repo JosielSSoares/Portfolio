@@ -47,23 +47,26 @@ infoContent.style.position = 'absolute';
 infoContent.style.right = '250px';  // Posição inicial x
 infoContent.style.top = '50px';    // Posição inicial y
 
-document.addEventListener('DOMContentLoaded', function () {
-  const collapsibles = document.querySelectorAll('.collapsible');
+$(document).ready(function () {
+  // Quando um elemento com a classe 'collapsible' é clicado
+  $('.collapsible').click(function () {
+    // Seleciona o próximo elemento com a classe 'content'
+    const content = $(this).next('.content');
 
-  collapsibles.forEach(function (collapsible) {
-    collapsible.addEventListener('click', function () {
-      const content = this.nextElementSibling;
+    // Animadamente exibe ou oculta o conteúdo
+    content.slideToggle();
 
-      if (content.style.display === 'block') {
-        content.style.display = 'none';
-        this.querySelector('.fa-caret-down').style.transform = 'rotate(0deg)';
-      } else {
-        content.style.display = 'block';
-        this.querySelector('.fa-caret-down').style.transform = 'rotate(180deg)';
-      }
-    });
+    // Alterna entre os ícones fa-eye-slash e fa-eye
+    const icon = $(this).find('.fa-eye-slash');
+    icon.toggleClass('fa-eye-slash fa-eye');
+
+    // Ajusta a cor conforme necessário
+    icon.css('color', content.is(':visible') ? '#8000ff' : '');
   });
 });
+
+
+
 
 
 
